@@ -1,8 +1,39 @@
-<div class="w3-content w3-section" style="max-width:500px">
-  <p>The w3-animate-fading class animates an element in and out (takes about 10 seconds).</p>
+<!-- MAIN SECTION -->
+<!-- THIS WILL APPEAR FIRST AND THEN BECOME HIDDEN WHEN THE BUTTON IS PRESSED -->
+<div class="grid" id="head">
+  <div id='pretty-text'>
+  <img src="images/ring.png" alt="">
+  <div id='bio-text'>
+    <p>At Jinyo's Fatboy Bakery, we proved you with all of your sweettooth dreams. From Sumo Fudge Brownies to Diabetic Sight Failing Funfetti Cakes, you have every sugar dream thought of. You want cookies the size of your auntie's backside, WE GOT 'EM!
+      You want boozy cupcakes that knock you out from one nibble, WE GOT 'EM!</p>
+      <button type="button" name="button" id='btn'>Shop Here</button>
+    </div>
+</div>
+    <div id='mainImg'>
+      <img src="images/super.png">
+    </div>
+</div>
 
-  <img class="mySlides w3-animate-fading" src="img_rr_01.jpg" style="width:100%">
-  <img class="mySlides w3-animate-fading" src="img_rr_02.jpg" style="width:100%">
-  <img class="mySlides w3-animate-fading" src="img_rr_03.jpg" style="width:100%">
-  <img class="mySlides w3-animate-fading" src="img_rr_04.jpg" style="width:100%">
+<!-- PRODUCT GRID -->
+<!-- THIS WILL BE HIDDEN AND REVEALED WITH A BUTTON FROM ABOVE -->
+<!-- EACH GRID WILL REDIRECT TO A PAGE WITH ITS ASSOCIATED PRODUCT -->
+<div class="row row-hidden" id="home-row"><!--row-reveal/row-hidden-->
+  <div class="column" id='cookie'>
+    <p class="product-word">Cookies</p>
+    <div class="effect">
+      <a href='/cookie'><img src="images/cookie.jpg" alt="cookie"></a>
+    </div>
+  </div>
+  <div class="column" id='cake'>
+    <p class="product-word">Cakes</p>
+    <div class="effect">
+      <a href="/cake"><img src="images/cake.jpg" alt="cake"></a>
+    </div>
+  </div>
+  <div class="column" id='muffin'>
+    <p class="product-word">Muffins</p>
+    <div class="effect">
+      <a href="/muffin"><img src="images/muffin.jpg" alt="muffin"></a>
+    </div>
+  </div>
 </div>

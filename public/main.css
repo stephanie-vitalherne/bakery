@@ -1,7 +1,15 @@
 /* WHOLE SITE */
 html{
-  position: absolute;
+  background-image: url('/images/blue.jpg');
+  background-repeat: no-repeat;
+  background-size: cover, contain;
   font-family: sans-serif;
+  height: 100%;
+  box-shadow: 0 0 10px black;
+}
+
+.blur {
+  filter: blur(9px);
 }
 /* ================== */
 /* NAVIGATION */
@@ -13,7 +21,7 @@ display: block;
 margin: 0;
 width: 100%;
 height: 48px;
-background: rgba(0,0,0,0.8);
+background: rgba(0,0,0,0.2);
 font-size: 17px;
 text-align: left;
 position: fixed;
@@ -37,7 +45,6 @@ font-weight: lighter;
   margin-right: 12%;
   float: right;
   margin-top: 1%;
-
 }
 
  #navi-right li{
@@ -47,3 +54,97 @@ font-weight: lighter;
   padding-right: 30px;
 }
 /* =============================== */
+/* HEAD SECTION*/
+img{
+  max-width: 100%;
+  background-repeat: no-repeat;
+}
+
+.grid{
+  display: grid;
+  grid-template: 100% / 50% 50%;
+  position: absolute;
+  top: 33%;
+}
+
+#mainImg img{
+  width: 75%;
+  position: relative;
+  /* left: 10%; */
+}
+/* ========================== */
+/* BIO */
+button{
+  position: relative;
+  top: 1%;
+  left: 22%;
+  padding: 15px 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #000;
+  border: none;
+}
+
+#bio-text{
+  text-align: center;
+  width: 50%;
+  position: relative;
+  bottom: 60%;
+  left: 20%;
+}
+
+#bio-text p{
+  position: relative;
+  left: 25%;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5em;
+  /* font-weight: 700; */
+}
+
+#pretty-text img{
+  background-size: cover;
+  width: 75%;
+  position: relative;
+  bottom: 10%;
+  left: 20%;
+}
+/* ============= */
+/* GOODS DISPLAY */
+.row-hidden{
+  display: none;
+}
+
+.row-reveal{
+  display: grid;
+  grid-template: 100% / 33vh 33vh 33vh;
+  position: relative;
+  grid-gap: 5%;
+  margin-top: 12%;
+  left: 16%;
+}
+
+.column a img{
+  border-radius: 50%;
+}
+
+.effect:hover{
+  opacity: 0.5;
+}
+
+.product-word{
+  position: relative;
+  top: 50%;
+  background: rgba(0, 17, 0, 0.5);
+  text-align: center;
+}
+
+/* ============================ */
+/* FOOTER */
+footer{
+  position: fixed;
+  bottom: 0;
+}
+
+footer li{
+  display: inline;
+}
+/* ======================== */
