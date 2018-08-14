@@ -4,6 +4,7 @@ function reveal(row){
   row = document.getElementById('home-row');
   row.classList.remove('row-hidden');
   row.classList.add('row-reveal');
-  body = document.getElementById('head');
-  body.classList.add('blur');
+  body = document.getElementById('body');
+  body.classList.add('blur', 'gray');
+  // body.classList.add('gray');
 }

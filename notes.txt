@@ -1,1 +1,1 @@
-cookie = curl "https://api.edamam.com/search?q=cookie&app_id=86ed2073&app_key=1d24e73bb8317d40fcef67f000c8920d"
+API_TOKEN=OXXSMEUFNHX72XFMJ72Q ruby server.rb
