@@ -1,101 +1,131 @@
 /* WHOLE SITE */
-html{
+html {
   font-family: sans-serif;
+  color: #000 !important;
 }
 
-body{
+body {
   background-image: url('/images/blue.jpg');
   background-repeat: no-repeat;
   background-size: cover, contain;
 }
+
 .blur {
   filter: blur(5px);
 }
+
 .gray {
   filter: grayscale(100%);
 }
 /* ================== */
+
 /* NAVIGATION */
-span{
+#logo {
   font-family: 'Kaushan Script', cursive;
   position: relative;
   left: 10%;
   font-size: 3em;
-  top: 40%;
+  top: 37%;
   text-shadow: 0 0 3px #000;
+  color: #B4F5D3 !important;
 }
 
-.navi{
-top: 0;
-right: 0;
-left: 0;
-display: block;
-margin: 0;
-width: 100%;
-height: 68px;
-background: rgba(0,0,0,0.2);
-font-size: 17px;
-text-align: left;
-position: fixed;
-font-weight: lighter;
+.navi {
+  top: 0;
+  right: 0;
+  left: 0;
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 88px;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+  text-align: left;
+  position: fixed;
+  font-weight: lighter;
+  color: #000 !important;
+  z-index: 1;
 }
 
-.navi #navi-left{
+.navi #navi-left {
   float: left;
   display: inline;
   list-style-type: none;
   display: flex;
   float: left;
   margin-left: 10%;
-  margin-top: 2%;
+  margin-top: 3%;
   text-shadow: 0 0 2px #eee;
 }
 
-#navi-left li{
+#navi-left li {
   padding-right: 5px;
+  color: #B4F5D3 !important;
 }
 
-.navi #navi-right{
+.navi #navi-right {
   margin-right: 12%;
   float: right;
-  margin-top: 2%;
+  margin-top: 3%;
   text-shadow: 0 0 2px #eee;
 }
 
- #navi-right li{
+#navi-right li {
   list-style-type: none;
   display: flex;
   float: left;
   padding-right: 30px;
 }
+
+.navi a{
+  color: #B4F5D3 !important;
+  text-shadow: 0 0 5px #000;
+}
+
+.mini-nav {
+  position: relative;
+  left: 39%;
+  top: 12%;
+}
+
+.mini-nav a{
+  color: #444 !important;
+}
+
+.mini-nav li {
+  display: inline;
+  list-style-type: none;
+}
 /* =============================== */
+
 /* HEAD SECTION*/
-img{
+img {
   max-width: 100%;
   background-repeat: no-repeat;
 }
 
-.grid{
+.grid {
   display: grid;
   grid-template: 100% / 50% 50%;
   position: absolute;
   top: 33%;
 }
 
-#mainImg{
+#mainImg {
   position: relative;
   bottom: 75%;
   left: 82%;
 }
 
-#mainImg img{
+#mainImg img {
   width: 75%;
   position: relative;
   /* left: 10%; */
 }
 /* ========================== */
+
 /* BIO */
-.button{
+.button {
   position: relative;
   top: 3%;
   left: 25%;
@@ -105,22 +135,24 @@ img{
   border: none;
 }
 
-#bio-text{
+#bio-text {
   text-align: center;
   width: 50%;
   position: relative;
-  bottom: 48%;
+  bottom: 46%;
   left: 20%;
 }
 
-#bio-text p{
+#bio-text p {
   position: relative;
-  left: 25%;
+  left: 23%;
   font-family: 'Amatic SC', cursive;
   font-size: 1.5em;
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 20px;
 }
 
-#pretty-text img{
+#pretty-text img {
   background-size: cover;
   width: 75%;
   position: relative;
@@ -128,12 +160,13 @@ img{
   left: 20%;
 }
 /* ============= */
+
 /* GOODS DISPLAY */
-.row-hidden{
+.row-hidden {
   display: none;
 }
 
-.row-reveal{
+.row-reveal {
   display: grid;
   grid-template: 100% / 33vh 33vh 33vh;
   position: relative;
@@ -142,59 +175,66 @@ img{
   right: 60%;
 }
 
-.column a img{
+.column a img {
   border-radius: 50%;
 }
 
-.effect:hover{
-  opacity: 0.5;
-}
-
-.product-word{
+.product-word {
   position: relative;
   bottom: -80%;
   background: rgba(0, 17, 0, 0.5);
   text-align: center;
 }
-
 /* ============================ */
-/* PRODUCT */
-.row{
-  max-width: 90%;
-  left: 5%;
-}
 
-.product{
-  position: relative;
-  top: 17%;
-  margin-right: 0;
-}
-
-.product img{
-border-radius: 50%;
-}
-/* ============================= */
 /* CONTACT */
-.contact{
+.contact {
   position: relative;
-  top: 20%;
+  top: 15%;
+  text-align: center;
 }
 
-.two{
+.two {
+  max-width: 90%;
+  max-height: 70%;
+}
+
+#loc{
+  position: relative;
+  top: 10%;
+}
+
+#events {
   max-width: 90%;
 }
 
-#events{
-max-width: 90%;
+#events img{
+  max-width: 70%;
+}
+
+#events h3{
+  margin-top: 0;
+}
+
+#title h2{
+  margin-right: 20%;
 }
 /* ================ */
+
 /* FOOTER */
-footer{
+footer {
   position: fixed;
   bottom: 0;
 }
 
-footer li{
+footer li {
   display: inline;
+  color: #000 !important;
+}
+
+#copy{
+  position: fixed;
+  float: right;
+  right: 5%;
 }
 /* ======================== */

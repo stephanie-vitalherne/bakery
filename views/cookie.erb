@@ -1,22 +1,32 @@
+<head>
+  <link rel="stylesheet" href="product.css">
+</head>
+
 <div class='ui grid product'>
   <div class='three column row'>
     <div class='column'>
       <img src="images/snickerdoodles.jpg">
       <h3><%= @snickerdoodle.type %></h3>
+      <div class= 'shadow'>
       <p><%= @snickerdoodle.description %></p>
       <p><%= @snickerdoodle.price %></p>
     </div>
+  </div>
     <div class='column'>
       <img src="images/madeleines.jpg">
       <h3><%= @madeleine.type %></h3>
+      <div class= 'shadow'>
       <p><%= @madeleine.description %></p>
       <p><%= @madeleine.price %></p>
     </div>
+  </div>
     <div class='column'>
       <img src="images/butterscotch.jpg">
       <h3><%= @butterscotch.type %></h3>
+      <div class= 'shadow'>
       <p><%= @butterscotch.description %></p>
       <p><%= @butterscotch.price %></p>
     </div>
+  </div>
   </div>
 </div>

@@ -1,0 +1,21 @@
+.row {
+  max-width: 90%;
+  left: 5%;
+  text-align: center;
+}
+
+.product {
+  position: relative;
+  top: 17%;
+  margin-right: 0;
+}
+
+.shadow{
+  background-color: rgba(0, 100, 0, 0.2);
+  border-radius: 5px;
+  /* text-align: center; */
+}
+
+.product img {
+  border-radius: 50%;
+}

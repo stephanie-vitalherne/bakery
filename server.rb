@@ -17,7 +17,7 @@ end
 get '/muffin' do
   @chocolate = Muffin.new('Chocolate Streusel Muffins', 'These chocolate streusel muffins are serious business. Seriously chocolate, that is. They’re made with cocoa powder, mini chocolate chips, regular chocolate chips, and chocolate milk! If you have a chocolate-lover in your house, these muffins are made for them!')
   @cornmeal = Muffin.new('Cornmeal Muffins with Blackberry Jam', 'There’s something so comforting about corn breads: cornbread, corn muffins, corn sticks. Don’t even get me started on hushpuppies. These corn muffins are simply enough to whip up anytime. They’re perfect for breakfast, of course, but also great for a snack or to go with lunch.', '$6')
-  @brown_butter = Muffin.new('Brown Butter Apple Cinnamon MUffins', 'The muffins are perfectly spiced and have big chunks of apples inside. They are finished with a simple cinnamon sugar topping that is pretty and sweet. And the brown butter, yeah, it makes these muffins extra special.')
+  @brown_butter = Muffin.new('Brown Butter Apple Cinnamon Muffins', 'The muffins are perfectly spiced and have big chunks of apples inside. They are finished with a simple cinnamon sugar topping that is pretty and sweet. And the brown butter, yeah, it makes these muffins extra special.')
   @muffin_arr = [@chocolate, @cornmeal, @brown_butter]
   erb :muffin
 end
@@ -31,7 +31,7 @@ get '/cake' do
 end
 
 get '/contact' do
-  req = Curl::Easy.perform("https://www.eventbriteapi.com/v3/events/search/?token=#{ENV['API_TOKEN']}&categories=110")
+  req = Curl::Easy.perform("https://www.eventbriteapi.com/v3/events/search/?token=#{ENV['API_TOKEN']}&q=cooking") # categories=110
   @data = JSON.parse(req.body_str)
   @event = @data['events']
   erb :contact
