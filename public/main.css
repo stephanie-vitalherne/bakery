@@ -104,6 +104,10 @@ img {
   background-repeat: no-repeat;
 }
 
+.shop i{
+  z-index: -1;
+}
+
 .grid {
   display: grid;
   grid-template: 100% / 50% 50%;
@@ -120,7 +124,6 @@ img {
 #mainImg img {
   width: 75%;
   position: relative;
-  /* left: 10%; */
 }
 /* ========================== */
 
@@ -209,7 +212,9 @@ img {
 }
 
 #events img{
-  max-width: 70%;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
 }
 
 #events h3{

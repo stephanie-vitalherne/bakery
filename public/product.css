@@ -13,9 +13,10 @@
 .shadow{
   background-color: rgba(0, 100, 0, 0.2);
   border-radius: 5px;
-  /* text-align: center; */
+  padding: 5px;
 }
 
 .product img {
   border-radius: 50%;
+  box-shadow: 0 0 25px #B4D0F5;
 }
